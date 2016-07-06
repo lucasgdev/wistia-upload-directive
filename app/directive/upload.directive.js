@@ -44,10 +44,10 @@
           if (scope.status == 'ready') {
             scope.url = $sce.trustAsResourceUrl('http://fast.wistia.net/embed/iframe/' + scope.hashId);
           } else if (scope.status != 'failed') {
-            scope.status = 'Generating preview..'
+            scope.status = 'Processing and generating preview..'
             $timeout(function(){
               scope.StatusState();
-            }, 3000);
+            }, 2000);
           } else if (scope.status == 'failed') {
             scope.status = 'Upload failed! :('
           }
