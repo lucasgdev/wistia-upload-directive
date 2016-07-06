@@ -1,0 +1,9 @@
+<div>
+  <span class="btn btn-primary btn-file">
+    Upload Video:
+    <input id="{{id}}__input" class="btn" type="file" name="file" data-url="https://upload.wistia.com">
+  </span>
+
+  <span>Status: {{status}}</span>
+  <iframe ng-src="{{url}}" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360" ng-show="url != ''"></iframe>
+</div>
