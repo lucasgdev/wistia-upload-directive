@@ -15,7 +15,7 @@
 
         return {
             restrict: 'E',
-            templateUrl: '../uploadWistiaPartial.html',
+            templateUrl: 'directive/uploadWistiaPartial.html',
             replace: true,
             link: link,
             scope: {
