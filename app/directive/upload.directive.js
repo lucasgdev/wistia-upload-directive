@@ -42,7 +42,7 @@
 
                     //Check video upload status and change messages or pass it to iframe
                     if (scope.status == 'ready') {
-                        scope.url = $sce.trustAsResourceUrl('http://fast.wistia.net/embed/iframe/' + scope.hashId);
+                        scope.url = $sce.trustAsResourceUrl('https://fast.wistia.net/embed/iframe/' + scope.hashId);
                         scope.status = 'Upload ok! :)';
                     } else if (scope.status != 'failed') {
                         scope.status = 'Processing and generating preview..'
