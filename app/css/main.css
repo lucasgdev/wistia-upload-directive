@@ -30,3 +30,7 @@ h1 {
     cursor: inherit;
     display: block;
 }
+.progress {
+    margin: 10px 0;
+}
+

@@ -28,6 +28,7 @@
             scope.hashId = '';
             scope.url = '';
             scope.status = 'Waiting video upload';
+            scope.progress = 0;
             scope.pass = 'c1bc7aee32830db88af6dd19fc12189cb1ac133248e18b2b480dffd6a73e6809';
 
             //Function to check the state of video
@@ -67,8 +68,17 @@
                         scope.status = 'Uploading Video...';
                         scope.hashId = '';
                         scope.url = '';
+                        scope.progress = 0;
 
                         data.submit();
+                    },
+
+                    progressall: function (e, data) {
+                        if (data.total > 0) {
+                            scope.$apply(function(){
+                                scope.progress = parseInt(data.loaded / data.total * 100, 10);
+                            });
+                        }
                     },
 
                     done: function (e, data) {
