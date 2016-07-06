@@ -1,0 +1,32 @@
+h1 {
+    margin-bottom: 32px;
+}
+
+.upload-btn-col {
+    margin-bottom: 24px;
+}
+
+.status-col {
+    margin-bottom: 24px;
+}
+
+.upload-btn-col .btn-file {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+
+.upload-btn-col .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

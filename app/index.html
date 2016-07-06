@@ -1,28 +1,43 @@
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- App style sheet -->
-  <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap style sheet  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- App style sheet -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body ng-app="AppWistia">
 
-  <h1>Wasap</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Wistia Upload - Responsive Directive</h1>
+        </div>
+    </div>
 
-  <uploadwistia id="fileupload" />
-
-
-  <!-- App Scripts -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="js/vendor/blueimp/jquery.ui.widget.js"></script>
-  <script src="js/vendor/blueimp/jquery.iframe-transport.js"></script>
-  <script src="js/vendor/blueimp/jquery.fileupload.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <uploadwistia id="videoupload"/>
+</div>
 
 
-  <script src="app.js"></script>
-  <script src="directive/upload.service.js"></script>
-  <script src="directive/upload.directive.js"></script>
+<!-- Vendors Scripts -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/vendor/blueimp/jquery.ui.widget.js"></script>
+<script src="js/vendor/blueimp/jquery.iframe-transport.js"></script>
+<script src="js/vendor/blueimp/jquery.fileupload.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+<!-- App Scripts -->
+<script src="app.js"></script>
+<script src="directive/upload.service.js"></script>
+<script src="directive/upload.directive.js"></script>
 
 </body>
 </html>
