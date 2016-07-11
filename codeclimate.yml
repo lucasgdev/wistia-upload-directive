@@ -1,0 +1,9 @@
+languages:
+  Ruby: true
+  JavaScript: true
+  PHP: true
+  Python: true
+exclude_paths:
+- "app/js/vendor/blueimp/jquery.ui.widget.js"
+- "app/js/vendor/blueimp/jquery.fileupload.js"
+- "app/js/vendor/blueimp/jquery.iframe-transport.js"
